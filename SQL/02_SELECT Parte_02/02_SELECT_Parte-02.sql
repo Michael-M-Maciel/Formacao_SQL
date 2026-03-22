@@ -26,6 +26,6 @@
 /*Desafio 5 (Simulador de Promoção - Nível Chefe): A equipa de marketing vai fazer uma campanha da "Black Friday" com 10% de desconto em todos os produtos!
 Vá à tabela produtos. Mostre a Marca (renomeada para Fabricante), o Nome_Produto (renomeado para Produto),
  o Preco_Unitario (renomeado para Preco_Original) e crie uma coluna calculando o novo preço com 10% de desconto. Chame essa nova coluna de Preco_Promocional.*/
- SELECT Marca_Produto AS Fabricante, Nome_Produto AS Produto, Preco_Unit AS Preco_original, Preco_Unit - 10/100  AS Preco_Promocional FROM produtos;
+ SELECT Marca_Produto AS Fabricante, Nome_Produto AS Produto, Preco_Unit AS Preco_original, Preco_Unit * 0.90  AS Preco_Promocional FROM produtos;
  
  
