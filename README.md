@@ -1,4 +1,4 @@
-# 🧪 SQL para Ciência de Dados - Formação Hashtag
+# 🧪 SQL - Formação Banco De Dados Impressionador - Hashtag Treinamentos
 > "Sem dados, você é apenas mais uma pessoa com uma opinião." — W. Edwards Deming.
 > Este repositório registra minha base técnica em SQL, o primeiro passo na minha transição para Data Science.
 
