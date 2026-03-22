@@ -1,3 +1,5 @@
+# 02- DESAFIOS PRATICOS: (SELECT Parte 2 e AS)
+
 /*Desafio 1 (O Embelezador Básico): A equipa de atendimento ao cliente não gosta dos nomes técnicos das colunas.
  Vá à tabela clientes e traga as colunas Nome, Sobrenome e Email. Mas,
  atenção: use o AS para renomear as colunas no resultado para Primeiro_Nome, Ultimo_Nome e Contacto_Email.*/
@@ -18,8 +20,12 @@
 /*Desafio 4 (Auditoria de Pedidos): Vamos conferir se as contas dos pedidos estão corretas.
  Na tabela pedidos, mostre o ID_Pedido, a Qtd_Vendida e calcule o lucro total daquele pedido específico (que será a Receita_Venda menos o Custo_Venda).
  Renomeie esta coluna calculada para Lucro_Total_Deste_Pedido.*/
+ SELECT ID_Pedido, Qtd_Vendida, Receita_Venda - Custo_Venda AS Lucro_Total_Deste_Pedido FROM pedidos;
  
 
 /*Desafio 5 (Simulador de Promoção - Nível Chefe): A equipa de marketing vai fazer uma campanha da "Black Friday" com 10% de desconto em todos os produtos!
 Vá à tabela produtos. Mostre a Marca (renomeada para Fabricante), o Nome_Produto (renomeado para Produto),
  o Preco_Unitario (renomeado para Preco_Original) e crie uma coluna calculando o novo preço com 10% de desconto. Chame essa nova coluna de Preco_Promocional.*/
+ SELECT Marca_Produto AS Fabricante, Nome_Produto AS Produto, Preco_Unit AS Preco_original, Preco_Unit - 10/100  AS Preco_Promocional FROM produtos;
+ 
+ 
